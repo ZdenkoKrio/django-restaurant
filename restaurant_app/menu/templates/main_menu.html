@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+
+{% block content %}
+<h1>Menu Page</h1>
+<br>
+<br>
+<h2><a href="{% url 'pizza_menu' %}">Pizza Menu</a></h2>
+<br>
+<h2><a href="{% url 'burger_menu' %}">Burger Menu</a></h2>
+<br>
+<h2><a href="{% url 'side_menu' %}">Side Menu</a></h2>
+{% endblock %}

@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        <li><a href="{% url 'home_page' %}">Domov</a></li>
+        <li><a href="{% url 'menu' %}">Menu</a></li>
+        {% if user.is_authenticated %}
+            <li><form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Odhlásiť sa</button>
+            </form></li>
+            <li><a href="{% url 'profile' %}">Profil</a></li>
+        {% else %}
+            <li><a href="{% url 'login' %}">Prihlásiť sa</a> / <a href="{% url 'signup' %}">Registrovať sa</a></li>
+        {% endif %}
+    </ul>
+</nav>

@@ -1,0 +1,5 @@
+BASE_PIZZA_PRICE = 100  # in czk
+PIZZA_DOUGH_WEIGHT = 200  # in grams
+BASE_BURGER_PRICE = 100  # in czk
+BASE_BURGER_WEIGHT = 150  # in grams
+

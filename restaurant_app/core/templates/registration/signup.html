@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+    SignUp
+{% endblock %}
+
+
+{% block content %}
+<h1>SignUp</h1>
+<br>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Zaregistrovať sa</button>
+</form>
+{% endblock %}

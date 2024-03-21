@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+    SideDish Menu
+{% endblock %}
+
+
+{% block content %}
+<a href="{% url 'menu' %}">back</a>
+<h1>SideDish Menu</h1>
+<br>
+<br>
+<div>
+  {% for s in side %}
+    <h3>{{ s }}</h3>
+  {% endfor %}
+</div>
+
+{% endblock %}
